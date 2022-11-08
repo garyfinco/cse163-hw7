@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <title>D3 Geomapping</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="ndcountiesstyle.css">
+    <!-- D3.js Source -->
+    <script type= "text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  </head>
+  <body>
+    <h1 style = "text-align:center; color:steelblue"><bold> North Dakota Counties </bold></h1>
+    <!-- Your D3.js code for making a Bar Graph -->
+    <script type="text/javascript" src="ndcounties.js"></script>
+    <div>Toggle County Boundary</div>
+    <label class="switch">
+        <input type="checkbox">
+        <div class="slider"></div>
+    </label>
+    <div>Toggle Density Color</div>
+    <label class="switch">
+        <input id="colorbox" type="checkbox">
+        <div class="slider"></div>
+    </label>
+    <div id="tooltip" class="hidden">
+        <p class="title"></p>
+        <div class="oneLine">
+            <p class="left">Pop. Density</p>
+            <p class="mid">:</p>
+            <p class="right" id="pop"></p>
+        </div>
+    </div>
+    <!-- Submission Info -->
+    <!--<h4>Created by "Your Name" </h4>-->
+    <h4>Gary Finco</h4>
+    
+    <p>External References:</p>
+    <p><a href="https://stackoverflow.com/questions/45469832/d3-fitsize-gives-nan-values">d3 fitSize gives NaN values</a></p>
+    <p><a href="https://stackoverflow.com/questions/14492284/center-a-map-in-d3-given-a-geojson-object">Center a map in d3 given a geoJSON object</a></p>
+    <p><a href="https://bl.ocks.org/larsenmtl/879f06e0aaf8591f3408e0faad086db2">fitSize in d3 version 4</a></p>
+    <p><a href="https://bl.ocks.org/piwodlaiwo/7d65515de5d1a8bf4b8699d61f5a09b7">D3v4 Map with TopoJSON</a></p>
+    <p><a href="https://stackoverflow.com/questions/44848428/selecting-only-a-subset-in-d3-select">Selecting only a subset in d3.select</a></p>
+    <p><a href="https://observablehq.com/@jeantimex/us-state-county-map">US State County Map</a></p>
+    <p><a href="https://github.com/topojson/us-atlas#counties-10m.json">U.S. Atlas TopoJSON</a></p>
+    <p><a href="https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array">From an array of objects, extract value of a property as array</a></p>
+    <p><a href="https://observablehq.com/@cesandoval/week-10b-intro-to-d3-js-mapping-data-with-d3">Week 11 - Intro to D3.js: Mapping Data with D3</a></p>
+    <p><a href="https://stackoverflow.com/questions/21842384/importing-data-from-multiple-csv-files-in-d3">Importing data from multiple csv files in D3</a></p>
+    <p><a href="https://bl.ocks.org/mbostock/6320825">Population Choropleth</a></p>
+    <p><a href="https://stackoverflow.com/questions/44565816/javascript-toggle-switch-using-data">Javascript toggle switch using data</a></p>
+      
+    <!--<h4>Description: The area of circle represents Total Energy Consumption in Trillion BTUs</h4>-->
+   
+    <!-- Create a list using <ul> and <li> tag -->   
+    <!--<h4>Files Submitted:</h4>-->
+    
+    <!--<ul>
+      <li>scatterindex.html</li>
+      <li>scatterplot.js</li>
+      <li>scatterstylesheet.css</li>
+      <li>scatterdata.csv</li>
+    </ul>-->
+      
+    <!--<h4> Sources: </h4>-->
+      
+      
+      
+  </body>
+</html>
