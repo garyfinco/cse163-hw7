@@ -1,3 +1,4 @@
+/*Button/Swithch styling*/
 .switch {
     position: relative;
     display: inline-block;
@@ -48,6 +49,7 @@ input:checked + .slider:before {
 }
 
 
+/*Tooltip styling*/
 #tooltip {
     position: absolute;
     width: 221px;
